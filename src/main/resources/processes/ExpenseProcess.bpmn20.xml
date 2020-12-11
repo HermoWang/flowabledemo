@@ -17,14 +17,14 @@
         <userTask id="directorTak" name="经理审批">
             <extensionElements>
                 <flowable:taskListener event="create"
-                                       class="com.haiyang.flowable.listener.ManagerTaskHandler"></flowable:taskListener>
+                                       class="com.cn.jw.flowable.userHandel.ManagerTaskHandler"></flowable:taskListener>
             </extensionElements>
         </userTask>
 <!--        <userTask id="holidayApprovedTask" name="Holiday approved" flowable:assignee="${employee}"/>-->
         <userTask id="bossTask" name="老板审批">
             <extensionElements>
                 <flowable:taskListener event="create"
-                                       class="com.haiyang.flowable.listener.BossTaskHandler"></flowable:taskListener>
+                                       class="com.cn.jw.flowable.userHandel.BossTaskHandler"></flowable:taskListener>
             </extensionElements>
         </userTask>
         <endEvent id="end" name="结束"></endEvent>
